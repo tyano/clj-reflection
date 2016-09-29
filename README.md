@@ -12,6 +12,10 @@ then you can access private fields of the object contained in a newly created ac
 
 ```(:value acc) ;; => 100.0```
 
+and you can fetch the original object contained in the accessible object by `object` function.
+
+```(object acc) ;; => (Double 100.0)```
+
 ## License
 
 Copyright © 2016 Tsutomu YANO
