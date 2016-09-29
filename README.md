@@ -1,14 +1,20 @@
 # clj-reflection
 
-A Clojure library designed to ... well, that part is up to you.
+A small Clojure library for accessing private fields of java objects.
 
 ## Usage
 
-FIXME
+You can create an accessible object from a java object by 'accesible' function.
+
+```(def acc (accessible (Double 100.0)))```
+
+then you can access private fields of the object contained in a newly created accessible object.
+
+```(:value acc) ;; => 100.0```
 
 ## License
 
-Copyright © 2016 FIXME
+Copyright © 2016 Tsutomu YANO
 
 Distributed under the Eclipse Public License either version 1.0 or (at
 your option) any later version.
